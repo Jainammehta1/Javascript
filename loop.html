@@ -5,22 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>whileloop</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+
 
 
 </head>
-
 <body>
-    <ul>
-        <script>
-            let num=0;
-            while(num<=5){
-                document.write("<li>"+num+"</li>");
-                num++
+    <input type="text"id="num">
+    <button onclick="info()">click here</button>
+   
+
+        <script> 
+          function  info(){
+        
+          let num=  document.getElementById("num").value;
+            for(let a=0;a<=num;a++){
+               document.getElementById("p").innerHTML+="<li>"+a+"</li>";
+                
             }
+        }
         </script>
-    </ul>
+        <ul id="p">
+
+        </ul>
     </body>
+        
+    
     </html>
     <style>
         ul{
